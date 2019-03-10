@@ -15,7 +15,6 @@ const pricingData = {
 }
 
 export const getPricingData = (delay = 1000) => {
-  console.warn('check: ')
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve(pricingData)

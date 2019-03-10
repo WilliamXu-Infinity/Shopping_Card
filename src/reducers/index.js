@@ -6,8 +6,7 @@ export default function (state, action) {
 
   switch (type) {
     case Types.SET_DATA:
-      console.warn('payload: ', payload)
-      return { ...payload }
+      return { ...state, ...payload }
 
     case Types.SET_DETAILS_CHECK:
       return { ...state, checks: { ...state.checks, see_item_details: !state.checks.see_item_details }}
