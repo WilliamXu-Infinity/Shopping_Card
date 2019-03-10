@@ -1,26 +1,95 @@
 .App {
-  text-align: center;
+  width: 100%
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+hr {
+  width: 80%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.menu_body {
+  display:flex;
+  flex-direction: column;
+  width: 18%;
+  border: solid gray 1px;
+}
+
+.menu_content {
+  display: flex;
+  flex-direction: row;
+}
+
+.image {
+  width: 40%;
+  
+}
+
+.details {
+  width: 60%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.details_middle {
+  display: flex;
+  flex-direction: row;
+}
+
+.title {
+  width: 70%;
+  text-align: left;
+}
+
+.value_savings {
+  width: 30%;
+  color: red;
+  text-align: right;
+}
+
+.title_tooltip {
+  width: 70%;
+  text-align: left;
+}
+
+.tooltiptext {
+  display: none;
+  width: 16%;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 50px;
+  left: 60px;
+  margin-left: -60px;
+}
+
+.title_tooltip:hover .tooltiptext {
+  display: unset;
+}
+
+.value {
+  width: 30%;
+  text-align: right;
+}
+
+.ui_current_price {
+  width: 50%;
+  text-align: left;
+}
+
+.ui_quality {
+  width: 50%;
+  text-align: right;
+}
+
+.details_bottom{
+  text-decoration: line-through;
+}
+
+.text_underline {
+  text-decoration: underline;
 }
 
 @keyframes App-logo-spin {
