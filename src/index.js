@@ -14,6 +14,10 @@ const initialState = {
   checks: {
     see_item_details: false,
     apply_promo_code: false
+  },
+  purchase_summary: {
+    discount_code: '',
+    discount: 1
   }
 }
 

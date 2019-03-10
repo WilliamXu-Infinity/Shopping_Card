@@ -13,6 +13,14 @@ export default function (state, action) {
 
     case Types.SET_PROMO_CHECK:
       return { ...state, checks: { ...state.checks, apply_promo_code: !state.checks.apply_promo_code }}
+
+    case Types.SET_DISCOUNT_CODE:
+      return { ...state, purchase_summary: { ...state.purchase_summary, discount_code: payload.target.value}}
+
+    case Types.SUBMIT_DISCOUNT_CODE: {
+      if (state.purchase_summary.discount_code === 'DISCOUNT') return { ...state, purchase_summary: {discount_code: '', discount: 0.9}}
+      else return { ...state, purchase_summary: {discount_code: '', discount: 1}} 
+    }
     
     default:
       return state

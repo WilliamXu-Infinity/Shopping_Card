@@ -2,7 +2,7 @@ import { setData } from './action-creators'
 
 const pricingData = {
   pricing: {
-    subtotal: 102.92,
+    subtotal: 102.96,
     savings: 3.85,
     tax: 8.92,
     total: 108.03,

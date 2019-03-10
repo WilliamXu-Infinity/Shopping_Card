@@ -7,8 +7,7 @@ import { connect } from 'react-redux'
 class App extends Component {
 
   componentDidMount() {
-    let promise = getPricingData()
-    promise.then(data => {
+    getPricingData().then(data => {
       this.props.setData(data)
     })
   }
