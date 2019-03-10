@@ -17,8 +17,8 @@ class Menu extends Component {
     return (
       <div className='menu_body'>
         <div className='menu_content'> 
-          <div className='title'>Subtotal</div>
-          <div className='value'>${roundUp(currentSubtotal)} {discount !== 1 && `(${discountOff} %)`}</div>
+          <div className='title_subtotal'>Subtotal</div>
+          <div className='value_subtotal'>${roundUp(currentSubtotal)} {discount !== 1 && `(${discountOff} %)`}</div>
         </div>
         <div className='menu_content'> 
           <div className='title_tooltip text_underline'>Pickup savings

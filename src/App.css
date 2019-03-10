@@ -43,6 +43,15 @@ hr {
   text-align: left;
 }
 
+.title_subtotal {
+  width: 30%;
+}
+
+.value_subtotal {
+  width: 70%;
+  text-align: right;
+}
+
 .value_savings {
   width: 40%;
   color: red;
