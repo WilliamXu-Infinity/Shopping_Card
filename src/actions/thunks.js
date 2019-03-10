@@ -10,7 +10,8 @@ const pricingData = {
   },
   itemDetails: {
     item_bname: 'Essentials by OFM ESS-3085 Racing Style Leather Gaming Chair, Red',
-    quantity: 1
+    quantity: 1,
+    current_price: 99.11
   }
 }
 

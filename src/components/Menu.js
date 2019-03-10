@@ -28,14 +28,14 @@ class Menu extends Component {
         <hr/>
 
         <div className='menu_content'> 
-          <div className='title'>Est. Total)</div>
+          <div className='title'>Est. Total</div>
           <div className='value'>${total}</div>
         </div>
         <a className='text_underline' onClick={this.props.setDetailsCheck}>{see_item_details ? 'See' : 'Hide'} item details {see_item_details ? '-' : '+'}</a>
         {see_item_details && <div className='menu_content'> 
-          <div className='image'>Est. Total)</div>
+          <img alt='item' src='https://images.prod.meredith.com/product/c3c7c5914a86a57b81bbec689743d54f/1549456182337/l/essentials-racing-style-leather-gaming-chair-ergonomic-swivel-computer-office-or-gaming-chair-red-ess-3085-red' className='image'></img>
           <div className='details'>
-            <div>${item_bname}</div>
+            <div>{item_bname}</div>
             <div className='details_middle'>
               <div className='ui_current_price'>{current_price}</div>
               <div className='ui_quality'>Qty: {quantity}</div>
